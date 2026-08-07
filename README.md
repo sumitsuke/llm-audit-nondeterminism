@@ -43,3 +43,10 @@ figures/     nofreelunch.png
 
 コード：MIT。データ（fixtures/ results/ targets/ gt.csv）：CC0。
 第三者：Qwen2.5-Coder（Apache-2.0）、Ollama（MIT）。詳細は [LICENSE](LICENSE)。
+
+## 利益相反（COI）と連絡先
+
+筆者（**tauridev**）は AIコード検証・監査サービスの出品者で、本リポの結論「多数決は"正しさ"より"しつこさ"を選ぶ／最後は人が裁定する」は事業上の立場に有利になり得ます。だからこそ生成ログ（`fixtures/`）・集計コード・独立検算（`verify_independent.py`）・事前登録のグラウンドトゥルース（`gt.csv`）まで公開し、読者が自分で検証できるようにしています。
+
+- AIで作ったアプリの検証・監査・修正 → https://coconala.com/services/4282365
+- プロフィール → https://coconala.com/users/6153961 ／ https://getaxiom.dev
