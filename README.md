@@ -44,6 +44,13 @@ figures/     nofreelunch.png
 コード：MIT。データ（fixtures/ results/ targets/ gt.csv）：CC0。
 第三者：Qwen2.5-Coder（Apache-2.0）、Ollama（MIT）。詳細は [LICENSE](LICENSE)。
 
+## 設計・検証の記録（Sumitsuke Lab）
+
+このリポジトリの背景・検証環境・判定・最終検証日・失敗例は、Sumitsuke Lab の本家記事にまとめています。
+
+- 同じコードを LLM に 51 回監査させると指摘は再現するのか——温度 0／0.7 の一致率と多数決の落とし穴 → https://sumitsuke.jp/lab/llm-audit-51-runs/
+- 受託（生成 AI コード・外注コードの点検と修理・テキスト完結） → https://sumitsuke.jp/works/repair/
+
 ## 利益相反（COI）と連絡先
 
 筆者（**tauridev**）は AIコード検証・監査サービスの出品者で、本リポの結論「多数決は"正しさ"より"しつこさ"を選ぶ／最後は人が裁定する」は事業上の立場に有利になり得ます。だからこそ生成ログ（`fixtures/`）・集計コード・独立検算（`verify_independent.py`）・事前登録のグラウンドトゥルース（`gt.csv`）まで公開し、読者が自分で検証できるようにしています。
