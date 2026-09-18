@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 axiom-pro
+Copyright (c) 2026 Sumitsuke (https://sumitsuke.jp/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,8 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-Data files (fixtures/, results/, targets/, gt.csv) are released under CC0 1.0
-(public domain dedication). Third-party components are used under their own
-licenses: Qwen2.5-Coder (Apache-2.0), Ollama (MIT).
