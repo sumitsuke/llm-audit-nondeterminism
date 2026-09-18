@@ -1,0 +1,17 @@
+# Data license — CC BY 4.0
+
+The measurement data, tables, figures, logs and generated artifacts in this
+repository (everything that is not source code) are licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+  https://creativecommons.org/licenses/by/4.0/
+
+You may copy, redistribute, adapt and use them for any purpose, including
+commercially, as long as you give appropriate credit:
+
+  Source: Sumitsuke Lab (https://sumitsuke.jp/lab/) — llm-audit-nondeterminism
+
+Source code in this repository is licensed separately under the MIT License
+(see LICENSE).
+
+Copyright (c) 2026 Sumitsuke (https://sumitsuke.jp/)
