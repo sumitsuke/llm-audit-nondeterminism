@@ -1,6 +1,6 @@
 # 公開コードだけ整形・検査する（データとして置いてある .py は触らない）。CI: .github/workflows/verify.yml
 line-length = 120
-exclude = ["targets"]
+exclude = ["targets", "*.md", "__pycache__"]
 
 [lint]
 select = ["E722", "F"]

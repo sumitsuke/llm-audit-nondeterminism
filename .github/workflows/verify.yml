@@ -12,7 +12,7 @@ jobs:
           python-version: '3.12'
       - name: compiles / no bare except / formatted
         run: |
-          pip install -q ruff
+          pip install -q ruff==0.15.12
           python -m compileall -q scripts
           ruff check .
           ruff format --check .
