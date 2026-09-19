@@ -1,0 +1,21 @@
+# 小さな CI（2026-09-19）: 第三者が clone して確かめられることを、push のたびに機械で確かめる。
+#   ①チェックサム（SHA256SUMS があるリポ） ②コンパイル・裸の except なし・整形済み ③公開データからの再生成が commit と一致
+name: verify
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: compiles / no bare except / formatted
+        run: |
+          pip install -q ruff
+          python -m compileall -q scripts
+          ruff check .
+          ruff format --check .
+      - name: reproduce from committed data and compare
+        run: |
+          python scripts/verify_independent.py
